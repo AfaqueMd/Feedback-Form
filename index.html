@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        /* body{
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        #feedback-form{
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(to left,rgba(199, 199, 197, 0.137) ,#a19d9d );
+            padding: 15px;
+            font-family: sans-serif;
+            color: rgb(4, 53, 54);
+        }
+        form p label{
+            margin-right: 5px;
+        }
+        form:nth-child(){
+            margin-left: 10px;
+        }
+        form>h2{
+            text-align: center;
+            color: rgb(48, 94, 54);
+        }
+    </style>
+</head>
+<body>
+    <main>
+    <form action="" id="feedback-form">
+        <h2>Feedback Form</h2>
+        <p>
+        <label for="feedback">Feedback Type: </label>
+        <select name="feedback" id="feedback" required>
+            <option value="">Choose an Option</option>
+            <option value="concern">Concern</option>
+            <option value="Product">Product Feedback</option>
+            <option value="bug_report">Bug Report</option>
+            <option value="positive">Say Thanks</option>
+        </select></p>
+        <p>
+        <label for="message">Message: </label>
+        <input type="text" name="message" id="message" required="required"50px placeholder="Your Message"></p>
+        <p>
+        <label for="rating">Rating:</label>
+        <label for="rating5">5</label>
+        <input type="radio" name="rating" id="rating5" value="5">
+        <label for="rating4">4</label>
+        <input type="radio" name="rating" id="rating4" value="4">
+        <label for="rating3">3</label>
+        <input type="radio" name="rating" id="rating3" value="3">
+        <label for="rating2">2</label>
+        <input type="radio" name="rating" id="rating2" value="2">
+        <label for="rating1">1</label>
+        <input type="radio" name="rating" id="rating1" value="1">
+        </p>
+        <p>
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age" min="10" max="100" placeholder="10 - 100"></p>
+        <p>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="abc@example.com">
+        </p>
+        <p>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" min="8" placeholder="minimum 8 characters" required>
+        </p>
+        <p>
+        <label for="websiteUrl">Website URL: </label>
+        <input type="url" name="websiteUrl" id="websiteUrl" placeholder="Optional">
+        </p>
+        <p>
+        <label for="terms">Terms and Conditions:</label>
+        <input type="checkbox" name="terms" id="terms" required>
+        </p>
+        <input type="submit" value="submit">
+    </form>
+</main>
+</body>
+</html>
